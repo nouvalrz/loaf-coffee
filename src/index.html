@@ -4,16 +4,317 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loaf Coffee</title>
+  <title>Home - Loaf Coffee</title>
+
+  <link rel="icon" href="./assets/svg/loaf-coffee-logo-only-orange.svg" sizes="any" type="image/svg+xml">
 
   <link rel="stylesheet" href="./styles/output.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-  <h1>Loaf Coffee</h1>
-  <p>On Development</p>
-  <a href="https://www.figma.com/design/kkIZxSCaLNnrk5FInvfg85/Loaf-Cafe?node-id=0-1&t=kcMzDRCRC4OhsBps-1"
-    target="_blank">UI in Figma</a>
+<body class="bg-oat font-[Manrope] text-oat">
+  <header class="px-2 mx-auto mt-2 lg:mt-8 main-container lg:px-8">
+    <div class="flex flex-row gap-4">
+      <div class="lg:flex flex-col max-w-[180px] hidden">
+        <div class="relative rounded-t-lg overflow-clip">
+          <img src="./assets/svg/triangle.svg" alt="" class="h-[248px] w-full object-cover object-bottom">
+          <img src="./assets/svg/loaf-coffee-logo-portrait.svg" alt="loaf-coffee-logo-portrait"
+            class="absolute top-5 left-[50%] translate-x-[-50%]">
+        </div>
+        <div
+          class="bg-mustard grow-[1] mt-8 rounded-lg p-5 bg-[url(/src/assets/images/ramadan-specials.png)] bg-[100%_auto] bg-no-repeat bg-center flex flex-col justify-between items-stretch">
+          <p class="uppercase font-[Archivo] font-extrabold text-xl">Discover Ramadan Specials</p>
+          <a href="menu.html" class="py-2 text-xl font-bold text-center rounded-lg bg-orange text-oat">Explore</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 grow-[1]">
+        <!-- Nav -->
+        <div
+          class="flex flex-row items-center justify-between lg:justify-center rounded-lg bg-orange min-h-[44px] p-2 lg:py-3 lg:px-7">
+          <img src="./assets/svg/loaf-coffee-logo-only.svg" alt="Logo" class="w-[2rem] lg:hidden">
+          <nav class="flex flex-row gap-5 font-medium lg:gap-12 text-oat md:text-2xl ">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="index.html">Facilities</a>
+            <a href="index.html">About Us</a>
+          </nav>
+        </div>
+
+        <!-- Jumbotron -->
+        <div
+          class="flex flex-col gap-8 p-4 rounded-lg lg:justify-between lg:flex-row  bg-mustard bg-orange-gradient lg:p-12 lg:max-h-[600px]">
+          <div class="lg:self-start">
+            <h1 class="font-[Archivo] uppercase lg:text-6xl text-5xl font-extrabold flex flex-col gap-0.5 lg:gap-2">
+              <span class="text-3xl font-normal lg:text-4xl">The</span> <span>Perfect</span> <span>Match</span>
+            </h1>
+            <p class="mt-2 lg:mt-4 lg:text-2xl">Coffee and classic croissant
+              at special price</p>
+          </div>
+          <div class="self-center w-full lg:self-end lg:grow">
+            <img src="./assets/images/jumbotron-product.webp" alt="jumbotron-product"
+              class="w-full max-w-xl mx-auto lg:max-w-full ">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <main>
+    <section id="promo" class="block px-2 mt-4 lg:hidden">
+      <div
+        class="bg-mustard grow-[1] rounded-lg p-5 bg-[url(/src/assets/images/ramadan-specials.png)] bg-[100%_auto] bg-no-repeat bg-right-top flex flex-col justify-between items-stretch min-h-[180px]">
+        <p class="uppercase font-[Archivo] font-extrabold text-xl">Discover Ramadan Specials</p>
+        <a href="menu.html" class="py-2 text-xl font-bold text-center rounded-lg bg-orange text-oat">Explore</a>
+      </div>
+    </section>
+    <section id="key-selling" class="relative mt-16 lg:mt-24">
+      <img src="./assets/svg/bg-mustard-elipsis.svg" alt="bg-mustard-elipsis"
+        class="absolute w-screen -top-12 -z-20 h-[200px] object-cover object-top">
+      <div>
+        <h2 class="font-[Archivo] font-extrabold text-2xl lg:text-3xl uppercase text-center lg:px-8">Why Our Coffee?
+        </h2>
+        <p class="px-2 mt-3 text-center text:lg lg:text-xl text-oat">Finest beans, perfect roast, rich flavor.
+          Experience the
+          difference
+          in
+          every sip!
+        </p>
+        <div class="flex flex-row flex-wrap justify-around gap-8 p-2 mt-12 bg-mustard lg:p-8">
+          <div class="max-w-[300px] text-center" data-aos="fade-up">
+            <div class="inline-block p-2 border-2 border-dashed rounded-lg">
+              <img src="./assets/images/key-selling-1.png" alt="key-selling-1" class="rounded-lg">
+            </div>
+            <p class="text-lg font-semibold lg:text-xl text-oat">Premium Quality</p>
+            <p class="mt-2 text-base">We use the finest coffee beans and fresh ingredients for an exceptional taste.</p>
+          </div>
+          <div class="max-w-[300px] text-center" data-aos="fade-up">
+            <div class="inline-block p-2 border-2 border-dashed rounded-lg">
+              <img src="./assets/images/key-selling-2.png" alt="key-selling-2" class="rounded-lg">
+            </div>
+            <p class="text-lg font-semibold lg:text-xl text-oat">Expert Craftsmanship</p>
+            <p class="mt-2 text-base">Every cup is brewed with passion and precision by our skilled baristas..</p>
+          </div>
+          <div class="max-w-[300px] text-center" data-aos="fade-up">
+            <div class="inline-block p-2 border-2 border-dashed rounded-lg">
+              <img src="./assets/images/key-selling-3.png" alt="key-selling-3" class="rounded-lg">
+            </div>
+            <p class="text-lg font-semibold lg:text-xl text-oat">Cozy Ambiance</p>
+            <p class="mt-2 text-base">Enjoy your coffee in a warm and inviting atmosphere, perfect for any moment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="top-selling" class="relative">
+      <img src="./assets/svg/bg-orange-elipsis.svg" alt="bg-orange-elipsis"
+        class="absolute w-screen top-[7rem] lg:top-0">
+      <div class="bg-mustard-to-orange">
+        <div class="z-10 p-2 lg:p-8">
+          <div class="relative z-20 w-full p-8 mt-12 rounded-lg lg:mt-0 lg:px-20 lg:py-12 bg-choco" data-aos="fade-up">
+            <h2 class="font-[Archivo] font-extrabold text-2xl lg:text-3xl uppercase text-center">Top Selling Product
+            </h2>
+            <p class="max-w-[1000px] mx-auto mt-3 text-lg lg:text-xl text-center text-oat">Discover our best-selling
+              delights!
+              Enjoy the
+              most
+              popular
+              coffee
+              and
+              croissants loved by our customers. Experience the perfect blend of flavors in every sip and bite!
+            </p>
+            <div class="flex flex-row gap-5 mt-6 overflow-x-scroll justify-evenly">
+              <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip w-[200px] shrink-0">
+                <img src="./assets/images/butter-latte.png" alt="butter-latte" class="w-full">
+                <div class="p-3">
+                  <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Butter
+                    Latte</p>
+                  <p class="text-xl font-[Archivo] uppercase text-choco">28K</p>
+                </div>
+              </div>
+              <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip w-[200px] shrink-0">
+                <img src="./assets/images/almond-croissant.png" alt="almond-croissant" class="w-full">
+                <div class="p-3">
+                  <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Almond
+                    Croissant</p>
+                  <p class="text-xl font-[Archivo] uppercase text-choco">24K</p>
+                </div>
+              </div>
+              <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip w-[200px] shrink-0">
+                <img src="./assets/images/arabica-coffee.png" alt="arabica-coffee" class="w-full">
+                <div class="p-3">
+                  <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Arabica
+                    Coffee
+                  </p>
+                  <p class="text-xl font-[Archivo] uppercase text-choco">22K</p>
+                </div>
+              </div>
+              <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip w-[200px] shrink-0">
+                <img src="./assets/images/dark-choco-danish.png" alt="dark-choco-danish" class="w-full">
+                <div class="p-3">
+                  <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Dark Choco
+                    Danish</p>
+                  <p class="text-xl font-[Archivo] uppercase text-choco">28K</p>
+                </div>
+              </div>
+              <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip w-[200px] shrink-0">
+                <img src="./assets/images/caramel-latte.png" alt="caramel-latte" class="w-full">
+                <div class="p-3">
+                  <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Caramel
+                    Latte</p>
+                  <p class="text-xl font-[Archivo] uppercase text-choco">30K</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="relative z-20">
+      <div class="px-2 py-8 bg-orange lg:px-8 lg:pb-20">
+        <div data-aos="fade-up">
+          <h2 class="font-[Archivo] font-extrabold text-2xl lg:text-3xl uppercase ">Customer Testimonials</h2>
+          <p class="max-w-[1000px] mt-3 text-lg lg:text-xl  text-oat">Hear what our happy customers say about our coffee
+            and
+            cozy atmosphere!
+          </p>
+        </div>
+        <div class="flex flex-col gap-5 mt-6 lg:mt-12 scroll-mt-80 lg:gap-10 lg:flex-row">
+          <div class="px-5 py-6 rounded-lg bg-oat text-choco" data-aos="fade-up">
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="my-4">"The coffee is always fresh with an irresistible aroma that instantly lifts my mood. The
+              place is so
+              cozy, making it a perfect spot to relax and unwind after a long day!"</p>
+            <div class="flex flex-row items-center gap-3">
+              <img src="./assets/images/person-1.png" alt="person-1" class="rounded-full">
+              <p>Rina Putri</p>
+            </div>
+          </div>
+          <div class="px-5 py-6 rounded-lg bg-oat text-choco" data-aos="fade-up">
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="my-4">"The coffee is always fresh with an irresistible aroma that instantly lifts my mood. The
+              place is so
+              cozy, making it a perfect spot to relax and unwind after a long day!"</p>
+            <div class="flex flex-row items-center gap-3">
+              <img src="./assets/images/person-1.png" alt="person-1" class="rounded-full">
+              <p>Rina Putri</p>
+            </div>
+          </div>
+          <div class="px-5 py-6 rounded-lg bg-oat text-choco" data-aos="fade-up">
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="my-4">"The coffee is always fresh with an irresistible aroma that instantly lifts my mood. The
+              place is so
+              cozy, making it a perfect spot to relax and unwind after a long day!"</p>
+            <div class="flex flex-row items-center gap-3">
+              <img src="./assets/images/person-1.png" alt="person-1" class="rounded-full">
+              <p>Rina Putri</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="location" class="mt-8 lg:mt-12">
+      <div class="p-2 lg:px-8 text-choco" data-aos="fade-up">
+        <h2 class="font-[Archivo] font-extrabold text-2xl lg:text-3xl uppercase text-center">CHECK OUT OUR PLACE</h2>
+        <p class="max-w-[1000px] mx-auto mt-3 text-lg lg:text-xl text-center">Discover our best-selling delights!
+          Experience the warm ambiance, cozy seating, and inviting atmosphere that make every visit special!
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126214.40562023978!2d115.14187063429337!3d-8.672504757819082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b0e5e80db%3A0xe27334e8ccb9374a!2sDenpasar%2C%20Kota%20Denpasar%2C%20Bali!5e0!3m2!1sid!2sid!4v1742748748819!5m2!1sid!2sid"
+          class="w-full max-w-[700px] h-[500px] p-2 mx-auto border-2! border-dashed! border-choco! rounded-lg mt-6"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+    </section>
+    <section id="gallery" class="mt-8 lg:mt-12">
+      <div class="px-2 py-6 rounded-t-lg lg:p-8 bg-choco" data-aos="fade-up">
+        <h2 class="font-[Archivo] font-extrabold text-2xl lg:text-3xl uppercase ">Our Gallery</h2>
+        <p class="max-w-[1000px] mt-3 text-lg lg:text-xl  text-oat">Explore our collection of moments, from beautifully
+          crafted
+          coffee to the cozy vibes of our shop!
+        </p>
+        <div class="flex flex-row gap-6 mt-6 overflow-x-scroll lg:gap-10 lg:justify-between">
+          <img src="./assets/images/gallery-1.png" alt="gallery-1"
+            class="rounded grow-0 lg:w-auto w-[300px] h-auto object-cover">
+          <img src="./assets/images/gallery-2.png" alt="gallery-2"
+            class="rounded grow-0 lg:w-auto w-[300px] h-auto object-cover">
+          <img src="./assets/images/gallery-3.png" alt="gallery-3"
+            class="rounded grow-0 lg:w-auto w-[300px] h-auto object-cover">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="flex flex-col gap-8 px-2 py-6 lg:gap-0 lg:flex-row lg:justify-around bg-orange lg:py-8 lg:px-24">
+      <div class="flex flex-col">
+        <img src="./assets/svg/loaf-coffee-logo-landscape.svg" alt="loaf-coffee-logo-landscape" class="lg:w-auto w-3xs">
+        <div class="flex flex-row gap-3 mt-2 text-2xl lg:mx-auto">
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div>
+        <p class="font-[Archivo] font-bold uppercase mb-2">Opening Hours</p>
+        <p>Monday - Sunday</p>
+        <p>9AM - 10PM</p>
+      </div>
+      <div>
+        <p class="font-[Archivo] font-bold uppercase mb-2">Contact Us</p>
+        <div>
+          <i class="fa-solid fa-map-pin"></i>
+          <p class="inline">Jl. Masih Jauh, No. 123 Denpasar</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p class="inline">cs@loafcoffee.com</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p class="inline">+62 883 233 111</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
