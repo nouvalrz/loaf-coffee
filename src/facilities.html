@@ -6,13 +6,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facilities - Loaf Coffee</title>
 
+  <link rel="icon" href="./assets/svg/loaf-coffee-logo-only-orange.svg" sizes="any" type="image/svg+xml">
+
   <link rel="stylesheet" href="./styles/output.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+<body class="bg-oat font-[Manrope] text-oat">
+  <header class="px-2 mx-auto mt-2 lg:mt-8 lg:px-8">
+    <div class="flex flex-col gap-4">
+      <!-- Nav -->
+      <div class="flex flex-row items-center justify-between rounded-lg bg-orange min-h-[44px] p-2 lg:py-3 lg:px-7">
+        <img src="./assets/svg/loaf-coffee-logo-only.svg" alt="Logo" class="w-[2rem] lg:hidden">
+        <img src="./assets/svg/loaf-coffee-logo-landscape.svg" alt="Logo" class="hidden lg:block lg:w-3xs">
+        <nav class="flex flex-row gap-5 font-medium lg:gap-12 text-oat md:text-2xl ">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="index.html">About Us</a>
+        </nav>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="p-4 pb-0! rounded-lg bg-orange bg-choco-gradient lg:p-12 lg:max-h-[600px] text-center overflow-clip">
+        <h1 class="font-[Archivo] uppercase lg:text-6xl text-5xl font-extrabold">OUR FACILITIES</h1>
+        <p class="text-xl lg:text-2xl">We provide everything for you.</p>
+        <img src="./assets/images/facilities-banner.png" alt="facilities-banner" class="mx-auto mt-8">
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="facilities" class="relative pb-6 mt-6 overflow-clip bg-oat-to-mustard md:bg-none">
+      <img src="./assets/svg/bg-mustard-elipsis.svg" alt="bg-mustard-elipsis" class="absolute w-full top-15 lg:top-5">
+      <div class="px-2 lg:px-8">
+        <div class="relative px-4 py-8 rounded-lg md:py-12 md:px-6 bg-choco ">
+          <h2 class="font-[Archivo] font-extrabold text-2xl lg:text-3xl uppercase text-center text-oat"
+            data-aos="fade-up">
+            Facilities & Events
+          </h2>
+
+          <div class="grid max-w-5xl grid-cols-1 gap-6 mx-auto mt-6 md:mt-10 md:grid-cols-2" data-aos="fade-up">
+            <div>
+              <i
+                class="flex flex-row items-center justify-center p-3 text-2xl rounded-full fa-solid fa-wifi aspect-square bg-oat text-choco"></i>
+              <p class="mt-2 text-xl font-semibold lg:text-2xl">Free Wi-fi & Electric Plugs</p>
+              <p>Enjoy high-speed Wi-Fi and easy access to power outlets anywhere in our coffee shop.</p>
+            </div>
+            <div>
+              <i
+                class="flex flex-row items-center justify-center p-3 text-2xl rounded-full fa-solid fa-briefcase aspect-square bg-oat text-choco"></i>
+              <p class="mt-2 text-xl font-semibold lg:text-2xl">Workspace & Meeting Room</p>
+              <p>A cozy space with comfortable seating, perfect for working or holding meetings.</p>
+            </div>
+            <div>
+              <i
+                class="flex flex-row items-center justify-center p-3 text-2xl rounded-full fa-solid fa-music aspect-square bg-oat text-choco"></i>
+              <p class="mt-2 text-xl font-semibold lg:text-2xl">Live Music & Open Mic Night</p>
+              <p>Enjoy live performances and showcase your talent in a vibrant, welcoming atmosphere.</p>
+            </div>
+            <div>
+              <i
+                class="flex flex-row items-center justify-center p-3 text-2xl rounded-full fa-solid fa-book aspect-square bg-oat text-choco"></i>
+              <p class="mt-2 text-xl font-semibold lg:text-2xl">Reading Corner & Mini Library</p>
+              <p>Relax with a good book in our cozy reading nook, featuring a curated selection for all.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <div class="flex flex-col gap-8 px-2 py-6 lg:gap-0 lg:flex-row lg:justify-around bg-orange lg:py-8 lg:px-24">
+      <div class="flex flex-col">
+        <img src="./assets/svg/loaf-coffee-logo-landscape.svg" alt="loaf-coffee-logo-landscape" class="lg:w-auto w-3xs">
+        <div class="flex flex-row gap-3 mt-2 text-2xl lg:mx-auto">
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div>
+        <p class="font-[Archivo] font-bold uppercase mb-2">Opening Hours</p>
+        <p>Monday - Sunday</p>
+        <p>9AM - 10PM</p>
+      </div>
+      <div>
+        <p class="font-[Archivo] font-bold uppercase mb-2">Contact Us</p>
+        <div>
+          <i class="fa-solid fa-map-pin"></i>
+          <p class="inline">Jl. Masih Jauh, No. 123 Denpasar</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p class="inline">cs@loafcoffee.com</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p class="inline">+62 883 233 111</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
