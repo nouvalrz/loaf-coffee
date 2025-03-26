@@ -17,6 +17,15 @@
     );
   }
 
+  .bg-choco-gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(71, 58, 52, 0) 64%,
+      rgba(71, 58, 52, 0.37) 84%,
+      rgba(71, 58, 52, 0.8) 100%
+    );
+  }
+
   .bg-orange-product-gradient {
     background: linear-gradient(
       to bottom,
@@ -32,6 +41,16 @@
       #efa622 50%,
       #eb622e 50%,
       #eb622e 100%
+    );
+  }
+
+  .bg-oat-to-mustard {
+    background: linear-gradient(
+      to bottom,
+      #fff1d4 0%,
+      #fff1d4 20%,
+      #efa622 20%,
+      #efa622 100%
     );
   }
 

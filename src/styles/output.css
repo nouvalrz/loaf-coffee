@@ -9,6 +9,7 @@
     --spacing: 0.25rem;
     --container-3xs: 16rem;
     --container-xl: 36rem;
+    --container-5xl: 64rem;
     --container-6xl: 72rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
@@ -195,6 +196,9 @@
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
+  .top-15 {
+    top: calc(var(--spacing) * 15);
+  }
   .top-\[7rem\] {
     top: 7rem;
   }
@@ -261,6 +265,9 @@
   .inline-flex {
     display: inline-flex;
   }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
   .h-\[200px\] {
     height: 200px;
   }
@@ -272,12 +279,6 @@
   }
   .h-auto {
     height: auto;
-  }
-  .min-h-52 {
-    min-height: calc(var(--spacing) * 52);
-  }
-  .min-h-96 {
-    min-height: calc(var(--spacing) * 96);
   }
   .min-h-\[44px\] {
     min-height: 44px;
@@ -303,8 +304,8 @@
   .w-screen {
     width: 100vw;
   }
-  .max-w-3xs {
-    max-width: var(--container-3xs);
+  .max-w-5xl {
+    max-width: var(--container-5xl);
   }
   .max-w-\[180px\] {
     max-width: 180px;
@@ -343,6 +344,9 @@
   .scroll-mt-80 {
     scroll-margin-top: calc(var(--spacing) * 80);
   }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -366,6 +370,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .justify-evenly {
     justify-content: space-evenly;
@@ -453,9 +460,6 @@
   .bg-\[url\(\/src\/assets\/images\/seasonal-offer\.png\)\] {
     background-image: url(/src/assets/images/seasonal-offer.png);
   }
-  .bg-\[url\(src\/assets\/images\/ramadan-offer\.png\)\] {
-    background-image: url(src/assets/images/ramadan-offer.png);
-  }
   .bg-\[100\%_auto\] {
     background-size: 100% auto;
   }
@@ -534,6 +538,9 @@
   .pb-0\! {
     padding-bottom: calc(var(--spacing) * 0) !important;
   }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
   }
@@ -602,9 +609,39 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .md\:mt-10 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .md\:grid-cols-4 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .md\:bg-none {
+    @media (width >= 48rem) {
+      background-image: none;
+    }
+  }
+  .md\:p-6 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:px-6 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:py-12 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 12);
     }
   }
   .md\:text-2xl {
@@ -616,6 +653,11 @@
   .lg\:top-0 {
     @media (width >= 64rem) {
       top: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:top-5 {
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 5);
     }
   }
   .lg\:mx-auto {
@@ -853,11 +895,17 @@
   .bg-orange-gradient {
     background: linear-gradient( to bottom, rgba(212, 97, 55, 0) 64%, rgba(212, 97, 55, 0.37) 84%, rgba(212, 97, 55, 0.8) 100% );
   }
+  .bg-choco-gradient {
+    background: linear-gradient( to bottom, rgba(71, 58, 52, 0) 64%, rgba(71, 58, 52, 0.37) 84%, rgba(71, 58, 52, 0.8) 100% );
+  }
   .bg-orange-product-gradient {
     background: linear-gradient( to bottom, #d46137 0%, rgba(212, 97, 55, 0) 40% );
   }
   .bg-mustard-to-orange {
     background: linear-gradient( to bottom, #efa622 0%, #efa622 50%, #eb622e 50%, #eb622e 100% );
+  }
+  .bg-oat-to-mustard {
+    background: linear-gradient( to bottom, #fff1d4 0%, #fff1d4 20%, #efa622 20%, #efa622 100% );
   }
   .main-container {
     width: 100%;
