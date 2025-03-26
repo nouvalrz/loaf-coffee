@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Loaf Coffee</title>
+
+  <link rel="icon" href="./assets/svg/loaf-coffee-logo-only-orange.svg" sizes="any" type="image/svg+xml">
+
+  <link rel="stylesheet" href="./styles/output.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-oat font-[Manrope] text-oat">
+  <header class="px-2 mx-auto mt-2 lg:mt-8 lg:px-8">
+    <div class="flex flex-col gap-4">
+      <!-- Nav -->
+      <div class="flex flex-row items-center justify-between rounded-lg bg-orange min-h-[44px] p-2 lg:py-3 lg:px-7">
+        <img src="./assets/svg/loaf-coffee-logo-only.svg" alt="Logo" class="w-[2rem] lg:hidden">
+        <img src="./assets/svg/loaf-coffee-logo-landscape.svg" alt="Logo" class="hidden lg:block lg:w-3xs">
+        <nav class="flex flex-row gap-5 font-medium lg:gap-12 text-oat md:text-2xl ">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="index.html">Facilities</a>
+          <a href="index.html">About Us</a>
+        </nav>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="p-4 pb-0! rounded-lg bg-choco bg-orange-gradient lg:p-12 lg:max-h-[600px] text-center overflow-clip">
+        <h1 class="font-[Archivo] uppercase lg:text-6xl text-5xl font-extrabold">Explore Menu</h1>
+        <p class="text-xl lg:text-2xl">We have everything you need.</p>
+        <img src="./assets/images/menu-banner.webp" alt="menu-banner" class="mx-auto mt-8">
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="promo">
+      <div class="px-2 mt-6 lg:px-8">
+        <h2 class="font-[Archivo] font-extrabold text-2xl lg:text-3xl uppercase text-choco text-center"
+          data-aos="fade-up">Promo & Offers
+        </h2>
+        <div class="flex flex-col gap-2 mt-4 lg:gap-8 lg:flex-row">
+          <div
+            class="px-2 py-4 rounded-lg lg:px-4 lg:py-6 bg-orange grow bg-[url(/src/assets/images/ramadan-offer.png)] bg-no-repeat bg-right-bottom bg-[auto_80%]"
+            data-aos="fade-up">
+            <p class="font-[Archivo] font-medium lg:text-xl uppercase">Ramadan Offer</p>
+            <p class="font-[Archivo] font-extrabold lg:text-3xl text-xl uppercase">10% Off Discount</p>
+            <p class="inline-block px-4 py-2 mt-4 font-bold rounded lg:text-xl bg-choco">Code : #IFTAAR_ON</p>
+            <p class="mt-2">Valid until 31 March</p>
+          </div>
+          <div
+            class="px-2 py-4 rounded-lg lg:px-4 lg:py-6 bg-orange grow bg-[url(/src/assets/images/seasonal-offer.png)] bg-no-repeat bg-right-bottom bg-[auto_80%]"
+            data-aos="fade-up">
+            <p class="font-[Archivo] font-medium lg:text-xl uppercase">SEASONAL OFFER</p>
+            <p class="font-[Archivo] font-extrabold lg:text-3xl text-xl uppercase">BUY 2 FREE 1 CROISSANT</p>
+            <p class="inline-block px-4 py-2 mt-4 font-bold rounded lg:text-xl bg-choco">Code : #GO_FREE</p>
+            <p class="mt-2">Valid until 5 April</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu" class="relative mt-16 lg:mt-24">
+      <img src="./assets/svg/bg-mustard-elipsis.svg" alt="bg-mustard-elipsis"
+        class="absolute w-screen -top-12 -z-20 h-[200px] object-cover object-top">
+      <h2 class="font-[Archivo] font-extrabold text-2xl lg:text-3xl uppercase text-center text-choco"
+        data-aos="fade-up">ALL MENU
+      </h2>
+      <p class="max-w-[1000px] mx-auto mt-3 text-lg lg:text-xl text-center text-choco" data-aos="fade-up">Find your best
+        way to enjoy
+        your
+        day
+      </p>
+      <div class="mt-4 text-center" data-aos="fade-up">
+        <div class="inline-flex flex-row gap-3 p-1 rounded-lg bg-orange">
+          <button class="px-3 py-1 text-xl font-bold rounded-lg lg:text-2xl bg-oat text-choco">All</button>
+          <button class="px-3 py-1 text-xl font-bold lg:text-2xl">Food</button>
+          <button class="px-3 py-1 text-xl font-bold lg:text-2xl">Beverage</button>
+          <button class="px-3 py-1 text-xl font-bold lg:text-2xl">Other</button>
+        </div>
+      </div>
+      <div class="flex px-2 pt-6 pb-12 bg-mustard lg:px-8">
+        <div class="grid grid-cols-2 gap-2 mx-auto mt-4 lg:gap-5 lg:grid-cols-6 md:grid-cols-4 lg:max-w-6xl"
+          data-aos="fade-up">
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/butter-latte.png" alt="butter-latte" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Butter
+                Latte</p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">28K</p>
+            </div>
+          </div>
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/almond-croissant.png" alt="almond-croissant" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Almond
+                Croissant</p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">24K</p>
+            </div>
+          </div>
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/arabica-coffee.png" alt="arabica-coffee" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Arabica
+                Coffee
+              </p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">22K</p>
+            </div>
+          </div>
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/dark-choco-danish.png" alt="dark-choco-danish" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Dark Choco
+                Danish</p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">28K</p>
+            </div>
+          </div>
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/caramel-latte.png" alt="caramel-latte" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Caramel
+                Latte</p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">30K</p>
+            </div>
+          </div>
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/frappe-cappuccino.png" alt="frappe-cappuccino" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Frappe
+                Cappuccino</p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">30K</p>
+            </div>
+          </div>
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/vanilla-croissant.png" alt="vanilla-croissant" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Vanilla
+                Croissant</p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">30K</p>
+            </div>
+          </div>
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/mocha-latte.png" alt="mocha-latte" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Mocha
+                Latte</p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">26K</p>
+            </div>
+          </div>
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/cheese-cake.png" alt="cheese-cake" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Cheese
+                Cake</p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">32K</p>
+            </div>
+          </div>
+          <div class="rounded-lg bg-oat bg-orange-product-gradient overflow-clip shrink-0">
+            <img src="./assets/images/ice-matcha.png" alt="ice-matcha" class="w-full">
+            <div class="p-3">
+              <p class="uppercase font-[Archivo] font-extrabold text-xl text-choco whitespace-pre-line">Ice
+                Matcha</p>
+              <p class="text-xl font-[Archivo] uppercase text-choco">28K</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="flex flex-col gap-8 px-2 py-6 lg:gap-0 lg:flex-row lg:justify-around bg-orange lg:py-8 lg:px-24">
+      <div class="flex flex-col">
+        <img src="./assets/svg/loaf-coffee-logo-landscape.svg" alt="loaf-coffee-logo-landscape" class="lg:w-auto w-3xs">
+        <div class="flex flex-row gap-3 mt-2 text-2xl lg:mx-auto">
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div>
+        <p class="font-[Archivo] font-bold uppercase mb-2">Opening Hours</p>
+        <p>Monday - Sunday</p>
+        <p>9AM - 10PM</p>
+      </div>
+      <div>
+        <p class="font-[Archivo] font-bold uppercase mb-2">Contact Us</p>
+        <div>
+          <i class="fa-solid fa-map-pin"></i>
+          <p class="inline">Jl. Masih Jauh, No. 123 Denpasar</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p class="inline">cs@loafcoffee.com</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p class="inline">+62 883 233 111</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
