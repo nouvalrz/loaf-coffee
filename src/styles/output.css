@@ -471,11 +471,14 @@
   .bg-orange {
     background-color: var(--color-orange);
   }
+  .bg-\[url\(\'\.\.\/assets\/images\/ramadan-specials\.png\'\)\] {
+    background-image: url('../assets/images/ramadan-specials.png');
+  }
+  .bg-\[url\(\'\.\/assets\/images\/ramadan-specials\.png\'\)\] {
+    background-image: url('./assets/images/ramadan-specials.png');
+  }
   .bg-\[url\(\/src\/assets\/images\/ramadan-offer\.png\)\] {
     background-image: url(/src/assets/images/ramadan-offer.png);
-  }
-  .bg-\[url\(\/src\/assets\/images\/ramadan-specials\.png\)\] {
-    background-image: url(/src/assets/images/ramadan-specials.png);
   }
   .bg-\[url\(\/src\/assets\/images\/seasonal-offer\.png\)\] {
     background-image: url(/src/assets/images/seasonal-offer.png);
